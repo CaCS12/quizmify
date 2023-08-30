@@ -7,7 +7,7 @@ type Props = { text: string };
 
 const SignInButton = ({ text }: Props) => {
   return (
-    <Button
+    <Button disabled={true}
       onClick={() => {
         signIn("google").catch(console.error);
       }}

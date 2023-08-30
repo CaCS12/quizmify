@@ -17,16 +17,17 @@ export default async function Home() {
 
   return (
     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-      <Card className="w-[300px]">
+      <Card className="w-[600px] h-[600px]">
         <CardHeader>
-          <CardTitle>Welcome to Quizmify 🔥!</CardTitle>
-          <CardDescription>
-            Quizmify is a platform for creating quizzes using AI!. Get started
-            by loggin in below!
+          <CardTitle className="text-4xl mb-5">Welcome to Quizmify🔥!</CardTitle>
+          <CardDescription className="text-xl">
+            <span className="text-2xl mb-5 text-gray-800">Coming soon!</span> <br /><br />
+            We are working hard to bring you the best experience. In the meantime, please enjoy a demo of our app!
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <SignInButton text="Sign In with Google" />
+        <video controls src="/quizmify-preview.mp4" width="720" height="240" autoPlay/>
+          {/* <SignInButton text="Sign In with Google" /> */}
         </CardContent>
       </Card>
     </div>

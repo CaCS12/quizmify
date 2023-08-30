@@ -47,8 +47,11 @@ export async function POST(req: Request, res: Response) {
         amount,
         topic,
         type,
-      }
+      },
     );
+
+
+
 
     if (type === "mcq") {
       type mcqQuestion = {
@@ -107,7 +110,7 @@ export async function POST(req: Request, res: Response) {
       );
     } else {
       return NextResponse.json(
-        { error: "An unexpected error occurred." },
+        { error: `An unexpected error on API/game occurred. Error: ${error}` },
         {
           status: 500,
         }
